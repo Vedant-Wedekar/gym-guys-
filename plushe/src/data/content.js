@@ -1,0 +1,176 @@
+// Single source of truth for all front-end content.
+// Each product carries an SVG "art" recipe (type + palette) instead of an image file.
+
+export const products = [
+  {
+    id: 'p1',
+    name: 'Mochi the Honey Bear',
+    category: 'Teddy Bears',
+    price: 48,
+    oldPrice: 62,
+    rating: 4.9,
+    reviews: 312,
+    badge: 'Bestseller',
+    tag: 'best',
+    blurb: 'Our flagship bear. Weighted paws, brushed-suede tummy, hugs back (almost).',
+    art: { type: 'bear', main: '#FFD7A8', accent: '#FFF0D6', cheek: '#FFB8D4' },
+  },
+  {
+    id: 'p2',
+    name: 'Bao the Cloud Bunny',
+    category: 'Plushies',
+    price: 42,
+    rating: 4.8,
+    reviews: 208,
+    badge: 'New',
+    tag: 'new',
+    blurb: 'Marshmallow-soft bunny with the longest, floppiest ears in the atelier.',
+    art: { type: 'bunny', main: '#E7DCFF', accent: '#F4EEFF', cheek: '#C9B6FF' },
+  },
+  {
+    id: 'p3',
+    name: 'Miso the Calico Cat',
+    category: 'Plushies',
+    price: 44,
+    rating: 4.9,
+    reviews: 176,
+    badge: 'Loved',
+    tag: 'best',
+    blurb: 'A purr-fect desk companion with stitched whiskers and a velvet tail.',
+    art: { type: 'cat', main: '#FFD9E8', accent: '#FFEAF2', cheek: '#FF9EC4' },
+  },
+  {
+    id: 'p4',
+    name: 'Pudding the Sky Duck',
+    category: 'Plushies',
+    price: 38,
+    rating: 4.7,
+    reviews: 141,
+    badge: 'New',
+    tag: 'new',
+    blurb: 'A buttery little duck for windowsills, desks and very serious cuddling.',
+    art: { type: 'duck', main: '#FFF3C9', accent: '#FFE08A', cheek: '#FFC4A3' },
+  },
+  {
+    id: 'p5',
+    name: 'Sora the Mint Bear',
+    category: 'Teddy Bears',
+    price: 52,
+    rating: 4.9,
+    reviews: 264,
+    badge: 'Bestseller',
+    tag: 'best',
+    blurb: 'A fresh-mint heirloom bear, hand-finished and ready to be named after you.',
+    art: { type: 'bear', main: '#D4F7E8', accent: '#EBFBF4', cheek: '#9FEFCE' },
+  },
+  {
+    id: 'p6',
+    name: 'Yumi the Sky Bunny',
+    category: 'Plushies',
+    price: 40,
+    rating: 4.8,
+    reviews: 119,
+    badge: 'New',
+    tag: 'new',
+    blurb: 'Powder-blue and impossibly squishable, with a tiny embroidered star.',
+    art: { type: 'bunny', main: '#D9EDFF', accent: '#EEF7FF', cheek: '#A8D8FF' },
+  },
+  {
+    id: 'p7',
+    name: 'Berry the Blush Bear',
+    category: 'Teddy Bears',
+    price: 50,
+    oldPrice: 58,
+    rating: 5.0,
+    reviews: 401,
+    badge: 'Loved',
+    tag: 'best',
+    blurb: 'The most-gifted bear of the season. Comes ribbon-wrapped, always.',
+    art: { type: 'bear', main: '#FFC4D8', accent: '#FFE0EC', cheek: '#FF8FBE' },
+  },
+  {
+    id: 'p8',
+    name: 'Taro the Lilac Cat',
+    category: 'Plushies',
+    price: 46,
+    rating: 4.8,
+    reviews: 98,
+    badge: 'New',
+    tag: 'new',
+    blurb: 'A dreamy lilac kitty with a satin bow and a very judgmental stare.',
+    art: { type: 'cat', main: '#E7DCFF', accent: '#F4EEFF', cheek: '#C9B6FF' },
+  },
+]
+
+export const categories = [
+  { id: 'c1', name: 'Teddy Bears', count: 48, accent: '#FFD7A8', art: { type: 'bear', main: '#FFD7A8', accent: '#FFF0D6', cheek: '#FFB8D4' } },
+  { id: 'c2', name: 'Plushies', count: 72, accent: '#C9B6FF', art: { type: 'bunny', main: '#E7DCFF', accent: '#F4EEFF', cheek: '#C9B6FF' } },
+  { id: 'c3', name: 'Gift Sets', count: 24, accent: '#9FEFCE', art: { type: 'cat', main: '#D4F7E8', accent: '#EBFBF4', cheek: '#9FEFCE' } },
+  { id: 'c4', name: 'Aesthetic Desk', count: 36, accent: '#A8D8FF', art: { type: 'duck', main: '#FFF3C9', accent: '#FFE08A', cheek: '#A8D8FF' } },
+]
+
+export const testimonials = [
+  {
+    id: 't1',
+    name: 'Aarohi M.',
+    role: 'gifted Berry the Blush Bear',
+    quote: 'It arrived wrapped like a tiny couture parcel. My sister actually teared up. Worth every rupee.',
+    accent: '#FFB8D4',
+  },
+  {
+    id: 't2',
+    name: 'Sana K.',
+    role: 'collector of three',
+    quote: 'The softness is unreal — like holding a cloud that loves you back. Plushé is in a league of its own.',
+    accent: '#C9B6FF',
+  },
+  {
+    id: 't3',
+    name: 'Diya R.',
+    role: 'personalized Sora the Mint Bear',
+    quote: 'I had it embroidered with my best friend\u2019s name. The stitching is flawless. Instant heirloom.',
+    accent: '#9FEFCE',
+  },
+  {
+    id: 't4',
+    name: 'Ishita P.',
+    role: 'desk-decor enthusiast',
+    quote: 'Every detail is considered, from the box to the bear. It feels like Apple made something to hug.',
+    accent: '#A8D8FF',
+  },
+]
+
+export const giftOptions = [
+  { id: 'g1', title: 'Embroider a name', desc: 'Hand-stitched in your choice of thread, on the paw or tummy.', accent: '#FFB8D4' },
+  { id: 'g2', title: 'Write a little note', desc: 'A letterpress card tucked inside the box, in your words.', accent: '#C9B6FF' },
+  { id: 'g3', title: 'Choose the wrap', desc: 'Six pastel ribbons and a wax seal, gift-ready on arrival.', accent: '#9FEFCE' },
+  { id: 'g4', title: 'Build a bundle', desc: 'Pair a plushie with treats and trinkets for the full surprise.', accent: '#FFE08A' },
+]
+
+export const faqs = [
+  {
+    id: 'f1',
+    q: 'How soft are we talking, really?',
+    a: 'Aerospace-grade cuddle. Every plushie uses our triple-brushed recycled microfiber with a weighted, huggable core — soft enough to nap on, sturdy enough to last decades.',
+  },
+  {
+    id: 'f2',
+    q: 'Can I personalize a plushie?',
+    a: 'Yes. Most companions can be embroidered with a name or short message, paired with a letterpress note, and wrapped in your chosen ribbon. Look for the “Personalize” option in any gift set.',
+  },
+  {
+    id: 'f3',
+    q: 'Are the materials safe and ethical?',
+    a: 'Always. We use OEKO-TEX certified, non-toxic materials, recycled fill, and partner only with small workshops paid a living wage. Safe for ages 3+ and the planet.',
+  },
+  {
+    id: 'f4',
+    q: 'How long does shipping take?',
+    a: 'Standard delivery is 3–5 days, with carbon-neutral express available. Personalized pieces add 1–2 days for the embroidery atelier to work their magic.',
+  },
+  {
+    id: 'f5',
+    q: 'What if it’s not the perfect match?',
+    a: 'You have 30 days for a no-questions return or exchange. Personalized pieces are final sale, but we’ll always help you get the details right before stitching.',
+  },
+]
